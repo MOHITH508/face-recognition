@@ -52,3 +52,28 @@ while True:
 
         face_names.append(name)
 
+ # Display results
+    for (top, right, bottom, left), name in zip(face_locations, face_names):
+        # Scale back up face locations since we scaled down frame
+        top *= 4
+        right *= 4
+        bottom *= 4
+        left *= 4
+
+        # Draw box
+        cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
+        # Draw label
+        cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 255, 0), cv2.FILLED)
+        cv2.putText(frame, name, (left + 6, bottom - 6),
+                    cv2.FONT_HERSHEY_DUPLEX, 1.0, (255, 255, 255), 1)
+
+    # Show the frame
+    cv2.imshow("Face Recognition", frame)
+
+    # Quit on 'q' key press
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+video_capture.release()
+cv2.destroyAllWindows()
+
