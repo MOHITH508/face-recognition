@@ -27,3 +27,5 @@ This is a Python-based desktop application that performs real-time face recognit
 ```bash
 git clone https://github.com/yourusername/face-recognition-app.git
 cd face-recognition-app
+
+Install dependencies:
