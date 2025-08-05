@@ -88,12 +88,3 @@ Images like `elon_musk.jpg` or `taylor_swift.png` in the `known_faces` directory
 
 A webcam feed showing recognized faces with name labels.
 
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
-
----
-
-Let me know if you want a GitHub version with badges or want to turn this into a PDF or DOCX!
