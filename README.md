@@ -1,7 +1,3 @@
-Here’s a professional and informative **README.md** file for your Face Recognition project using Python, OpenCV, and `face_recognition`:
-
----
-
 # 🔍 Real-Time Face Recognition using Python and OpenCV
 
 This is a real-time face recognition system built using the powerful [`face_recognition`](https://github.com/ageitgey/face_recognition) library and OpenCV. It can detect and recognize faces using a webcam and match them with a preloaded set of known images.
